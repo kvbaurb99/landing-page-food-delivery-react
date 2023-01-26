@@ -18,9 +18,10 @@ export default function Restaurants() {
     }
 
   return (
-    <div className='whitespace-nowrap overflow-x-scroll scrollbar-hide scroll-smooth' id={'slider'}>
-        <div className='flex relative items-center gap-[14rem] rounded-xl h-[250px] w-full' >
-            <FontAwesomeIcon onClick={slideLeft} icon={faArrowLeft} size='xl' className='fixed text-white left-0 z-20 bg-black/60 p-2 rounded-full cursor-pointer mt-6' />
+    <div className='mt-[2rem] w-[90%] m-auto'>
+        <div className='flex items-center relative' >
+            <FontAwesomeIcon onClick={slideLeft} icon={faArrowLeft} size='xl' className='bg-black rounded-full opacity-80 text-green-600 p-2 absolute left-0 z-20 hover:opacity-100 cursor-pointer mb-[6rem]' />
+           <div id={'slider'} className='w-full overflow-x-scroll scroll-smooth whitespace-nowrap relative  scrollbar-hide flex h-[300px] gap-[14rem]'>
         {restaurants.map((restaurant, index) => {
             return <Restaurant
                 key={restaurant.name}
@@ -29,7 +30,8 @@ export default function Restaurants() {
                 description={restaurant.description}
             />
         })}
-        <FontAwesomeIcon onClick={slideRight} icon={faArrowRight} size='xl' className='fixed right-0 text-white z-20 bg-black/60 p-2 rounded-full cursor-pointer mt-6' />
+           </div>
+           <FontAwesomeIcon onClick={slideRight} icon={faArrowRight} size='xl' className='bg-black rounded-full opacity-80 text-green-600 p-2 absolute right-0 z-20 hover:opacity-100 cursor-pointer mb-[6rem]' />
         </div>
     </div>
   )
