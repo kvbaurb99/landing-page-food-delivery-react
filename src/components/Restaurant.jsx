@@ -9,8 +9,8 @@ export default function Restaurant({name, img, description}) {
             <button className='relative top-20 bg-white rounded-xl text-black px-5 py-1 hover:bg-slate-200'>Order Now</button>
         </div>
         <div className='absolute w-[350px] h-[200px] rounded-xl'>
-            <img src={img} alt="" className='w-[350px] h-[200px] rounded-xl' />
-            <div className='absolute top-0 left-0 bg-black/50 w-full h-full rounded-xl'></div>
+            <img src={img} alt="" className='w-[350px] h-[200px] rounded-xl object-cover' />
+            <div className='absolute top-0 left-0 bg-black/50 w-full h-full rounded-xl hover:bg-black/0 duration-500'></div>
         </div>
     </div>
   )
