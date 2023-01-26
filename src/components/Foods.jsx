@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Foods({asian, burgers, all, pizza, european, lowest, low, high, highest}) {
   return (
-    <div className='w-full h-full text-white'>
+    <div className='w-full text-white'>
         <div>
             <h2 className='text-white font-bold text-center text-5xl'>Top Rated <span className='text-green-600'>Restaurants Foods</span></h2>
         </div>
