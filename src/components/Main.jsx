@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Restaurants from './Restaurants'
+import Foods from './Foods'
 
 
 export default function Main() {
@@ -8,6 +9,7 @@ export default function Main() {
     <>
         <NavBar />
         <Restaurants />
+        <Foods />
     </>
   )
 }
