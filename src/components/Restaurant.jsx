@@ -10,7 +10,7 @@ export default function Restaurant({name, img, description}) {
         </div>
         <div className='absolute w-[350px] h-[200px] rounded-xl'>
             <img src={img} alt="" className='w-[350px] h-[200px] rounded-xl object-cover' />
-            <div className='absolute top-0 left-0 bg-black/50 w-full h-full rounded-xl hover:bg-black/0 duration-500'></div>
+            <div className='absolute top-0 left-0 bg-black/50 w-[350px] h-[200px] rounded-xl hover:bg-black/0 duration-500'></div>
         </div>
     </div>
   )
