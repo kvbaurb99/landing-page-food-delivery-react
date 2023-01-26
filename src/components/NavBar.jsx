@@ -26,10 +26,10 @@ export default function NavBar() {
     <div className='absolute top-0 left-0 bg-black/50 w-full h-[700px] z-10'></div>
     <div className='text-white absolute top-[25%] left-0 z-50 w-full flex items-center flex-col'>
         <p className='text-4xl font-bold max-w-[600px] text-center tracking-wide leading-normal'>Restaurant food, takeaway and shopping. <span className='text-green-600'>Delivered to your doors</span>. </p>
-        <p className='mt-4'>Find your favorite food </p>
+        <p className='mt-4'>Find your favorite restaurant </p>
         <div>
             <input type="text" name="" id="" placeholder='Looking for some burger or pizza?' className='w-[600px] py-4 rounded-3xl mt-4 text-black align-left px-4 border-none outline-none' />
-            <div className='bg-green-600 py-3 w-[135px] rounded-3xl absolute top-[76.4%] right-[34.8%] flex justify-center cursor-pointer hover:bg-green-700'>Search</div>
+            <div className='bg-green-600 py-3 w-[135px] rounded-3xl absolute top-[76.4%] right-[34.4%] flex justify-center cursor-pointer hover:bg-green-700'>Search</div>
         </div>
     </div>
     </div>
