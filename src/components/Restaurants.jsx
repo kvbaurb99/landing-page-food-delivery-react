@@ -29,6 +29,7 @@ export default function Restaurants() {
                 name={restaurant.name}
                 img={restaurant.img}
                 description={restaurant.description}
+                title={restaurant.title}
             />
         })}
            </div>
