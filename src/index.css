@@ -8,3 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: black;
 }
+
+.menu-roll {
+  transform: translateX(0px);
+  
+}
