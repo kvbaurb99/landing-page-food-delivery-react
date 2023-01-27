@@ -1,9 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import { Route,Routes } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import Main from "./components/Main";
 import productsArray from "./components/data/Products";
 import { useState } from "react";
+import LogIn from "./components/LogIn";
+import SignIn from "./components/SignUp";
+import { AuthContextProvider } from "./authorization/AuthContext";
+import Kaifu from "./components/RestaurantsPages/Kaifu";
 
 function App() {
 
@@ -58,11 +61,16 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Main products={products} asian={findAsian} burgers={findBurgers} all={findAll} pizza={findPizza} european={findEuropean} lowest={lowestPrice} low={lowPrice} high={highPrice} highest={highestPrice} />} path='/' />
-      </Routes>
-    </BrowserRouter>
+    <AuthContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Main products={products} asian={findAsian} burgers={findBurgers} all={findAll} pizza={findPizza} european={findEuropean} lowest={lowestPrice} low={lowPrice} high={highPrice} highest={highestPrice} />} path='/' />
+          <Route path='/login' element={<LogIn />} />
+          <Route path='/signup' element={<SignIn />} />
+          <Route path='/restaurants/kaifu' element={<Kaifu />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthContextProvider>  
   );
 }
 
