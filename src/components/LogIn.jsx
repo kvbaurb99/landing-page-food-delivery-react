@@ -59,7 +59,7 @@ export default function LogIn() {
                 <input type="submit" value="Log in" className='bg-green-600 mt-8 py-2 rounded-lg cursor-pointer' />
             </form>
             <button onClick={anonymous} className='bg-white text-black w-full py-2 rounded-lg mt-[1rem]'>Log in as guest</button>
-            <p className='mt-5'>Don't have account yet? <Link to='/signup'><span className='text-green-600 cursor-pointer'>Sign in</span></Link></p>
+            <p className='mt-5 text-sm md:text-lg'>Don't have account yet? <Link to='/signup'><span className='text-green-600 cursor-pointer'>Sign in</span></Link></p>
         </div>
         <img src="https://bluemoonthaicafe.com/wp-content/uploads/2020/04/italian-food-background-1.jpg" alt="" className='absolute top-0 left-0 w-full h-full object-cover' />
         <div className='absolute top-0 left-0 w-full h-full bg-black/60'></div>

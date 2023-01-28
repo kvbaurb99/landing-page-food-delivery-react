@@ -9,7 +9,7 @@ import { faQuestion, faXmark, faGear, faCartShopping, faHeart } from '@fortaweso
 
 export default function Menu({handleToggle, user}) {
   return (
-    <div className='absolute menu top-0 right-0 w-[400px] h-[650px] bg-black duration-1000 rounded-tl-lg rounded-bl-lg translate-x-[400px]'>
+    <div className='absolute menu top-0 right-0 md:w-[400px]  w-[385px] h-[650px] bg-black duration-1000 rounded-tl-lg rounded-bl-lg translate-x-[400px] z-100'>
         <div className='p-4 flex justify-between border-b border-white/30'>
             <p className='text-xl'>Best <span className='text-green-600'>Eats</span></p>
             <FontAwesomeIcon onClick={handleToggle} icon={faXmark} size='xl' className='mt-0.5 text-green-600 cursor-pointer' />
